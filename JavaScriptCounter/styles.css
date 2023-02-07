@@ -1,15 +1,7 @@
-/*
-=============== 
-Fonts
-===============
-*/
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-/*
-=============== 
-Variables
-===============
-*/
+/* Variables */
 
 :root {
   /* dark shades of primary color*/
@@ -53,11 +45,8 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
+
+/* Global Styles */
 
 *,
 ::after,
@@ -151,11 +140,7 @@ main {
   place-items: center;
 }
 
-/*
-=============== 
-Counter
-===============
-*/
+/* Counter */
 
 main {
   min-height: 100vh;
