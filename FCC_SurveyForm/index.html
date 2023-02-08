@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter full name"/></label>
+      
+        <label id="email-label">Email: <input id="email" type="email"  required placeholder="Enter valid email address"/></label>
+
+        <label id="number-label">Age:<input id="number" type="number" placeholder="In years" min="1" max="120" required/></label>
+
+      </fieldset>
+      <fieldset>
+        <label>Favourite sport:</label>
+			  <select id="dropdown" name="sports">
+          <option value="">(Select one)</option>
+          <option value="Rugby">Rugby</option>
+          <option value="Football">Football</option>
+          <option value="Cricket">Cricket</option>
+          <option value="Tennis">Tennis</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Rowing">Rowing</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        
+      <div class="radio">
+        <fieldset>
+          <label> I am a... </label>
+          <label><input type="radio" name="player-type" class="inline" value="current"/> Current Player</label>
+          <label><input type="radio" name="player-type" class="inline" value="ex"/> Ex Player</label>
+        </fieldset>
+        
+        <div>
+          <label>If 'Ex player' would you play again?</label>
+          <fieldset>
+
+            <label>
+              <input type="checkbox" name="terms" class="inline" value="yes" /> Yes
+            </label>
+              <label><input type="checkbox" name="terms" class="inline" value="no"/> No </label>
+
+              <label>Describe your experience in your sport:
+          <textarea name="bio" rows="3" cols="30" placeholder="When/why you started? Reasons you did/not enjoy?"></textarea>
+			  </label>
+         </fieldset>
+      </div>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+        </fieldset>
+    </form>
+  </body>
+</html>
